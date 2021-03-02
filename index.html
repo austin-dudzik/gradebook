@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Gradebook</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+
+  <div class="container rounded p-5 m-5 bg-light w-75 mx-auto">
+
+    <form id="gradebook">
+
+      <h1>Gradebook</h1>
+
+      <div class="row">
+        <div class="col-md-8">
+
+          <div class="form-group mb-2">
+            <label for="firstName">First name</label>
+            <input type="text" name="firstName" id="firstName" class="form-control" required>
+          </div>
+
+          <div class="form-group mb-2">
+            <label for="lastName">Last name</label>
+            <input type="text" name="lastName" id="lastName" class="form-control" required>
+          </div>
+
+          <div class="form-group mb-2">
+            <label for="points">Points earned</label>
+            <input type="number" name="points" id="points" class="form-control" required>
+          </div>
+
+
+          <div class="form-group mb-2">
+            <label for="possiblePoints">Points possible</label>
+            <input type="number" name="possiblePoints" id="possiblePoints" class="form-control" required>
+          </div>
+
+
+          <button type="submit" name="submit" class="btn btn-block btn-dark my-3">Go</button>
+
+          <p id="output"></p>
+          <p id="letterGrade"></p>
+
+    </form>
+
+  </div>
+
+  <div class="col-md-4">
+
+    <div class="card bg-dark text-white">
+      <div class="card-body p-4">
+        <h5 class="mb-3">Grading scale</h5>
+        <p><strong>A</strong> 100 to 93</p>
+        <p><strong>A-</strong> <93 to 90</p>
+        <p><strong>B+</strong> <90 to 87</p>
+        <p><strong>B</strong> <87 to 83</p>
+        <p><strong>B-</strong> <83 to 80</p>
+        <p><strong>C+</strong> <80 to 77</p>
+        <p><strong>C</strong> <77 to 73</p>
+        <p><strong>C-</strong> <73 to 70</p>
+        <p><strong>D+</strong> <70 to 67</p>
+        <p><strong>D</strong> <67 to 63</p>
+        <p><strong>D-</strong> <63 to 60</p>
+        <p><strong>F</strong> <60</p>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="scripts.js"></script>
+
+</html>
