@@ -36,22 +36,22 @@ $(document).ready(function() {
 
       // Set the name
       let nameCell = $("<td>");
-      table.append(nameCell);
+      tableRow.append(nameCell);
       nameCell.text(aStudent.name);
 
       // Set the letter
       let letterCell = $("<td>");
-      table.append(letterCell);
+      tableRow.append(letterCell);
       letterCell.text(aStudent.letter);
 
       // Set the points
       let pointsCell = $("<td>");
-      table.append(pointsCell);
+      tableRow.append(pointsCell);
       pointsCell.text(aStudent.points);
 
       // Set the grade
       let gradeCell = $("<td>");
-      table.append(gradeCell);
+      tableRow.append(gradeCell);
       gradeCell.text(aStudent.grade + "%");
 
     }
